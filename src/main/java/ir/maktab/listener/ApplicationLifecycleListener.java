@@ -11,12 +11,18 @@ import jakarta.servlet.ServletContextEvent;
 import jakarta.servlet.ServletContextListener;
 import jakarta.servlet.annotation.WebListener;
 
-
+/**
+ * ApplicationLifecycleListener ServletContextListener that handles
+ * initialization and cleanup tasks for the web application.
+ * <p>
+ * When the application starts, it checks if an admin user exists.
+ * If not, it creates a default admin user with username "admin" and password "admin".
+ *
+ */
 @WebListener
 public class ApplicationLifecycleListener implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent sce) {
-        System.out.println("Application is starting...");
         UserService userService = new UserServiceImpl();
         if(userService.findUserByUsername("admin")==null){
             User admin = new User("admin","admin@s.ir", PasswordEncoder.encode("admin"));

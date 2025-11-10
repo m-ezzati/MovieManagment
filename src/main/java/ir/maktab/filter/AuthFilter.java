@@ -6,6 +6,19 @@ import jakarta.servlet.annotation.WebFilter;
 
 import java.io.IOException;
 
+/**
+ * AuthFilter is a servlet filter that intercepts all HTTP requests (/*)
+ * to enforce authentication before accessing protected resources.
+ * <p>
+ * It allows requests to login, register pages, index page, and static resources
+ * (CSS, JS) to pass through without authentication.
+ * <p>
+ * For all other requests, it checks if a session exists and if the user
+ * attribute is present. If the user is not authenticated, it redirects
+ * the request to the login page. Otherwise, the request continues through
+ * the filter chain.
+ *
+ */
 @WebFilter("/*")
 public class AuthFilter implements Filter {
     @Override
