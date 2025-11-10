@@ -10,6 +10,7 @@ It uses Servlets, JSP, and Hibernate, and runs on the Apache Tomcat server.
 - Database connection using Hibernate ORM  
 - JSP pages for dynamic web content  
 - Deployment on Apache Tomcat
+- JavaDoc documentation for classes and methods
 
 ## Technologies Used
 - **Java EE (Servlet, JSP)**
