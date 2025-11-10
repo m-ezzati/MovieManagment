@@ -1,0 +1,191 @@
+/* 🟦 Header */
+header {
+    text-align: center;
+    padding: 10px;
+    background: #031952;
+    color: white;
+}
+
+/* 🟦 Layout */
+section {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9feff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+}
+
+/* 🟦 Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #031952;
+    margin-top: 20px;
+}
+
+footer .back-home {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 500;
+}
+
+footer .back-home:hover {
+    color: red;
+}
+
+/* 🟦 Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+figure {
+    margin: 0;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+figure:hover {
+    transform: scale(1.05);
+}
+
+img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-size: 0.95em;
+    color: #555;
+}
+
+.genre {
+    color: #777;
+    font-size: 0.9em;
+}
+
+/* 🟦 Buttons */
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.add-btn {
+    background-color: #0d6efd; /* آبی */
+}
+
+.delete-btn {
+    background-color: #dc3545; /* قرمز */
+}
+
+.detail-btn {
+    background-color: #6c757d; /* خاکستری */
+}
+
+.rate-btn {
+    background-color: #ffc107; /* زرد */
+    color: #000;
+}
+
+/* 🟦 Rating Stars */
+.rating {
+    margin-top: 10px;
+}
+
+.stars {
+    direction: rtl;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.stars input {
+    display: none;
+}
+
+.stars label {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.stars input:checked ~ label,
+.stars label:hover,
+.stars label:hover ~ label {
+    color: gold;
+}
+
+.avg-rating {
+    margin-top: 8px;
+    font-size: 0.9em;
+}
+
+.avg-stars {
+    color: gold;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.avg-value {
+    color: #333;
+    font-weight: 500;
+    margin-left: 3px;
+}
+
+/* 🟦 Search Bar */
+.search-bar {
+    max-width: 1000px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.search-bar input[type="text"],
+.search-bar select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.search-bar input[type="submit"] {
+    background-color: #031952;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar input[type="submit"]:hover {
+    background-color: #1b2b72;
+}

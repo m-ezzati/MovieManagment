@@ -1,0 +1,115 @@
+header {
+    text-align: center;
+    padding: 10px;
+    background: #031952;
+    color: white;
+}
+
+header img {
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+div img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: inline-block;
+}
+
+.img {
+    text-align: center;
+    margin: 20px;
+}
+
+h2{
+    text-align: center;
+    margin: 20px;
+}
+
+section {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9feff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, textarea, button, select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+label {
+    padding: 10px;
+    font-size: 14px;
+}
+
+button {
+    background: #042951;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 18px;
+}
+
+.table {
+    padding: 30px;
+}
+
+table {
+    width: 80%;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #b2b7ba;
+
+}
+
+th, td {
+    padding: 10px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #031952;
+    margin-top: 20px;
+}
+
+footer .back-home {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 500;
+}
+
+footer .back-home:hover {
+    color: red;
+}
+
+.register {
+    background-color: #458845;
+}
+
+.register:hover {
+    background-color: #215021;
+    cursor: pointer;
+}

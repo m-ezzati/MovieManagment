@@ -1,0 +1,30 @@
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.card {
+    margin-left: 30%;
+    max-width: 480px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.profile-pic {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.profile-pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #dee2e6;
+    object-fit: cover;
+}
+.profile-pic small {
+    color: #6c757d;
+    display: block;
+    margin-top: 0.5rem;
+}
